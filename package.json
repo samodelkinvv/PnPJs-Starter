@@ -1,0 +1,24 @@
+{
+  "name": "pnpjs-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@pnp/common": "^1.3.0",
+    "@pnp/graph": "^1.3.0",
+    "@pnp/logging": "^1.3.0",
+    "@pnp/odata": "^1.3.0",
+    "@pnp/sp": "^1.3.0",
+    "typescript": "^3.3.3333",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  },
+  "devDependencies": {
+    "ts-loader": "^5.3.3"
+  }
+}

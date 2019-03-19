@@ -1,0 +1,24 @@
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2018/07/ProvisioningSchema"
+                  Author="John White"
+                  Generator="Human being"
+                  Version="1.0"
+                  Description="A sample Provisioning document"
+                  DisplayName="Sample Provisioning"
+                  ImagePreviewUrl="https://sharepointpnp.com/ImagePreview.png">
+	<pnp:Preferences Author="Viacheslav Samodelkin" Version="1.0" Generator="Human being">
+	</pnp:Preferences>
+	<pnp:Templates ID="Alerter-Provisioning">
+		<pnp:ProvisioningTemplate 
+        ID="SPECIALTEAM" 
+        Version="1.0" 
+        ImagePreviewUrl="https://preview.png" 
+        DisplayName="Special Team Site" 
+        Description="This is a Special Team Site for custom provisioning">
+            <pnp:Files>
+                <pnp:File Src="./dist/Alerter.js" Folder="Style Library" Overwrite="true"/>
+                <pnp:File Src="./dist/Alerter.js.map" Folder="Style Library" Overwrite="true"/>
+                <pnp:File Src="./Site Pages/Alerter.aspx" Folder="SitePages" Overwrite="true"/>
+            </pnp:Files>
+		</pnp:ProvisioningTemplate>
+	</pnp:Templates>
+</pnp:Provisioning>

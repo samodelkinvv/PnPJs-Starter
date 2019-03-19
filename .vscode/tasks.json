@@ -1,0 +1,40 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558 
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        // {
+        //     "label": "Typescript",
+        //     "type": "typescript",
+        //     "tsconfig": "tsconfig.json",
+        //     "problemMatcher": [
+        //         "$tsc"
+        //     ],
+        //     "group": "build"
+            
+        // },
+        {
+            "label": "Webpack",
+            "type": "shell",
+            "command": "${workspaceRoot}/node_modules/.bin/webpack",
+            "args": [
+                "--display-modules",
+                "--progress"
+            ],
+            "presentation": {"echo": true},
+            "group": "build"         
+        },
+        {
+            "label": "Provisioning",
+            "type": "shell",
+            "command": "powershell",
+            "args": ["./Provision.ps1"],
+            "presentation": {"echo": true},
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "dependsOn": "Webpack"
+        }
+    ]
+}
